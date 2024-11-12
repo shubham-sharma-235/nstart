@@ -1,0 +1,131 @@
+.heading2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+.heading2 div{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.heading2 div h1{
+    font-size: 3rem;
+}
+.heading2 div p{
+    width: 40%;
+    font-size: 1.2rem;
+}
+
+.startup-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.startup-list a{
+    color: #000;
+}
+.startup-list .startup-card{
+    width: 100%;
+}
+.startup-card{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    padding: 2rem;
+    border-top: 1px solid #6a6868;
+    transition: all ease-in-out .5s;
+    cursor:pointer;
+    user-select: none;
+}
+.startup-card:nth-last-child(1){
+    border-bottom: 1px solid #6a6868;
+}
+.startup-card:hover{
+    background-color: rgba(224, 231, 245, 0.816);
+    transition: all ease-in-out .5s;
+}
+.card-l img{
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.card-r {
+    width: 70%;
+    /* padding: 4rem 4rem; */
+}
+.card-r h1{
+    font-size: 2.4rem;
+}
+.card-r p{
+    font-size: 1.2rem;
+}
+
+.cohort-5-button{
+    margin-top: .6rem;
+    padding: 4px 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease-in-out .1s;
+}
+.cohort-5-button h4{
+    font-size: 1.4rem;
+}
+.cohort-5-button i{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.startup-card:hover .cohort-5-button{
+    background-color: #D65101; 
+    color: #fff;
+    transition: all ease-in-out .2s;
+}
+
+.cohort-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #060211;
+}
+.cohort-nav a{
+    color: #fff;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+@media(max-width:680px){
+    .heading2 {
+        padding: 2rem 1rem;
+    }
+    .heading2 div {
+        flex-direction: column;
+    }
+    .heading2 div p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .startup-card {
+        flex-direction: column;
+        padding: 1.2rem;
+        cursor: auto;
+        user-select: none;
+    }
+    .card-r {
+        width: 90%;
+        /* padding: 4rem 4rem; */
+    }
+    .card-r p{
+        font-size: 18px;
+    }
+}
